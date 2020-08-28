@@ -27,7 +27,7 @@ class ImageFrom extends Component {
         var formData = new FormData();
         formData.append("file", data.file);
         this.setState({ responseSent: true, successResponse: false })
-        axios.post('http://localhost:8080/uploadFile', formData, {
+        axios.post('/uploadFile', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
